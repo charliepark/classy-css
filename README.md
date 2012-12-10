@@ -16,7 +16,7 @@ It gives you the following benefits:
 * Writing CSS for large sites uses the same methodology as writing CSS for small sites. There are more moving parts, of course, but they're pretty straightforward parts.
 * Creating a styleguide for your site is totally painless.
 
-### Hmm. Isn't it like …
+### Hmm. Isn't it like _______________
 
 It's probably clarifying to talk about what it isn't.
 
