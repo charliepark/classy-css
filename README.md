@@ -132,3 +132,39 @@ Similar to David Allen's approach to organizing paper-based files, Classy CSS us
 
 Preprocessors like Less and SASS have opened up a whole world of possibility. Classy tries to make the most of that, especially with the `extend` command that SASS makes available.
 
+
+
+
+
+    .table-cell{
+      font-size: 13px;
+      padding: 4px 10px;
+      position: relative;
+      text-align: right;
+    }
+    
+    .table-header-text{
+      @extend .table-cell;
+      font-family: "gill sans mt", "gill sans", "Trebuchet MS", verdana;
+      line-height: 14px;
+      min-width: 80px;
+      padding-bottom: 2px;
+      text-transform: uppercase;
+      vertical-align: bottom;
+    }
+    
+    .td{
+      @extend .table-cell;
+      line-height: 20px;
+    }
+    
+    .td-amount{
+      @extend .td;
+      @extend .muted;  
+      text-align: right;
+    }
+    
+    .td-amount-carried-in{
+      @extend .td-amount;
+    }
+
