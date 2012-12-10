@@ -117,9 +117,9 @@ In *Getting Things Done*, David Allen recommends having a single filing structur
 Similar to David Allen's approach to organizing paper-based files, Classy CSS uses a single CSS file, with all classes listed alphabetically. Because you're naming them descriptively, they should fall into a natural order. For example:
 
     .td {}
-    .td-category {}
     .td-amount {}
     .td-amount-overspent {}
+    .td-category {}
     
     .title {}
     .title-of-page {}
