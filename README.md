@@ -4,6 +4,8 @@ Classy CSS is a CSS styleguide and design principle.
 
 It leverages the best enhancements of CSS preprocessors like Sass / LESS, the best architectural principles of OOCSS and SMACSS, and can drop in to any existing CSS framework you're currently using. It's efficient and elegant — for writing, reading, rendering, and refactoring.
 
+### So, the benefits?
+
 It gives you the following benefits:
 
 * Writing code is faster, with less cognitive overhead. You don't waste time worrying about selector specificity or the DOM. You know *exactly* where that CSS declaration should go.
@@ -14,16 +16,28 @@ It gives you the following benefits:
 * Writing CSS for large sites uses the same methodology as writing CSS for small sites. There are more moving parts, of course, but they're pretty straightforward parts.
 * Creating a styleguide for your site is totally painless.
 
+### Hmm. Isn't it like …
+
 It's probably clarifying to talk about what it isn't.
+
 * It is **not** a framework, like Bootstrap, or Foundation, or Blueprint, or similar. It doesn't come with any pre-existing classes or modules.
 * It is **not** an architecture, like SMACSS, or like OOCSS, though it's similar. You can use it alongside either one of those if you like them, though it contradicts some of the principles in both.
 * It is **not** a preprocessor, like Sass or LESS. Classy CSS leans very heavily on preprocessors, but isn't one itself. We use Sass, and have written all documentation assuming you're using Sass.
 
-If you already have a CSS flow that you like, there's a good chance that Classy won't work for you. But if you're like me --- you've tried a lot of approaches, and none have worked yet --- this could be a great fit.
+If you already have a CSS flow that you like, there's a good chance that Classy won't work for you. But if you're like me — you've tried a lot of approaches, and none have worked yet — this could be a great fit.
 
 Let's make CSS fun again.
 
+### So who are you, to be writing this? ###
+
+I'm Charlie Park. I've been writing CSS for about 12 years now. I've tried just about every approach out there, and have been refining my approach with every project.
+
+The principles that Classy CSS emphasizes are extracted out of my own building of sites, and out of frustration that the existing tools haven't met my needs.
+
+
+
 ***
+
 
 ## How to Write Classy CSS
 
