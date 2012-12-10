@@ -129,3 +129,6 @@ Similar to David Allen's approach to organizing paper-based files, Classy CSS us
 
 
 ### Lean On Sass
+
+Preprocessors like Less and SASS have opened up a whole world of possibility. Classy tries to make the most of that, especially with the `extend` command that SASS makes available.
+
