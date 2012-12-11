@@ -57,9 +57,13 @@ Every styled item has one (and only one) class at runtime. More on dynamically-a
 
 ### No Naked HTML Elements in Your CSS
 
+Before we had CSS preprocessors, it made sense to worry a lot about the structure of your site and to reflect that structure in your CSS file. So you'd have declarations like `div#main_nav li a{}`. You then had to decide where that went. (Does it go in a section for links? For "things in lists"? For "navigation stuff"?) With Classy, you would give each of those links a class: `.link-main-nav` (or similar). You'd put it in the appropriate place in the CSS file (alphabetically), and you'd be done.
+
 It's tempting to write a universal layout template for your `<h3>`s, or for `<p>`s, or whatever. A base class that everything else can build off of. Before CSS preprocessors like SASS, that wasn't a bad idea. But Classy shifts all of that trickle-down design (the *cascade*!) to the initial file. Again, if the element deserves to have a style, it deserves to have a class.
 
 Apart from a CSS reset (we like Eric Meyer's reset, but any reset will do). Apart from that, don't traffick in naked elements.
+
+You ask: "But what about `p`aragraph tags? And `strong`s? And `em`s?" Okay. A caveat: There will be some atomic elements that you *will* include without classes. But that's why it's important to build your reset/base so that it conforms to the look and feel of the rest of the site. But if it's not an element that your CMS is going to dynamically generate, give the item a class and style it accordingly.
 
 ### No IDs
 
@@ -184,10 +188,27 @@ Then, in the actual HTML of the page to be rendered, we'd simply have:
 
 
 
-Do we end up with more classes? Yes. Is that a problem? No.
+Do we end up with more classes? Yes. Is that a problem? No. Why not?
+
+Common critiques against having lots of classes (flesh out):
+
+* CSS file size is embiggened
+* 
 
 
-### JS ###
+
+
+## Downsides ##
+
+There are, of course, downsides to this approach. Let's look at them.
+
+### Babysitting elements ###
+
+
+
+
+
+## JS ##
 
 Some notes to flesh out:
 
