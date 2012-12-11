@@ -136,12 +136,12 @@ In OOCSS, you'd have multiple classes that would apply to an object: `<button cl
 
     .button{}
     
-    .button-hero{
+    .button-cancel{
       @extend .button-large;
-      @extend .button-primary;
       @extend .button-rounded;
+      @extend .button-secondary;
     }
-    
+
     .button-large{
       @extend .button;
       font-size: 2em;
@@ -165,10 +165,17 @@ In OOCSS, you'd have multiple classes that would apply to an object: `<button cl
       background: #ccc;
     }
     
-    .button-sidekick{
+    .button-submit{
       @extend .button-large;
+      @extend .button-primary;
       @extend .button-rounded;
-      @extend .button-secondary;
     }
+
+Then, in the actual HTML of the page to be rendered, we'd simply have:
+
+    <button class="button-submit">comment</button>
+    <button class="button-cancel">cancel</button>
+
+
 
 Do we end up with more classes? Yes. Is that a problem? No.
