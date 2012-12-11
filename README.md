@@ -51,7 +51,7 @@ Primarily, my years writing CSS and not finding any of the methodologies to be s
 <a name="how"></a>
 ## How to Write Classy CSS
 
-The main thing you'll see when you write Classy CSS is --- surprise --- there are lots of classes. A good shorthand: "Everything that deserves styling deserves a class. Nothing deserves more than one class."
+The main thing you'll see when you write Classy CSS is — surprise — there are lots of classes. A good shorthand: "Everything that deserves styling deserves a class. Nothing deserves more than one class."
 
 ### 1. Lots of Classes
 
@@ -59,7 +59,7 @@ The first thing you'll notice is that everything is a class. Hence the name.
 
 Every styled item has one (and only one) class at runtime. More on dynamically-added classes in a bit.
 
-### No Naked HTML Elements in Your CSS
+### 2. No Naked HTML Elements in Your CSS
 
 Before we had CSS preprocessors, it made sense to worry a lot about the structure of your site and to reflect that structure in your CSS file. So you'd have declarations like `div#main_nav li a{}`. You then had to decide where that went in your CSS files. (Does it go in a section for links? For "things in lists"? For "navigation stuff"?) With Classy, you would give each of those links a class: `.link-main-nav` (or similar). You'd put it in the appropriate place in the CSS file (alphabetically), and you'd be done.
 
@@ -85,7 +85,6 @@ Ideally, though, you'd set your app to spit out a more specific class:
 
 Similarly, you might find that you have content that flows into different containers, which should be styled differently depending on where it gets displayed. If your site uses this kind of content, y
 
-
 ### No IDs
 
 There's no good reason to declare anything in CSS with an ID. If you're trying to scope declarations via a containing div, you should create a new class and extend the existing class.
@@ -96,6 +95,28 @@ There's no good reason to declare anything in CSS with an ID. If you're trying t
 ### Give Your CSS Classes Descriptive Names
 
 Instead of trying to decipher cryptic names when you're reading your code in a year or two, it's better to give your CSS classes descriptive names. So instead of `.postDate`, call it `.post-metadata-`
+
+### How to Name Your Clases ###
+
+I've started using dashes in my CSS to separate words, mainly so I can know — at a glance — whether I'm dealing with Ruby (words_joined_by_underscores), JavaScript (whateverThisOneIsCalled), or CSS (words-separated-by-dashes). That's up to you, though.
+
+Anyway, I recommend using a description of the type of element as the first word in the title. So, some examples:
+
+    .button{}
+    .button-cancel{}
+    .button-submit{}
+    .link{}
+    .link-nav-main{}
+    .link-nav-sub{}
+    .td-amount{}
+    .td-date{}
+    .title{}
+    .title-of-page{}
+    .title-of-section{}
+
+You'll notice that for the links and the titles, I've avoided using elements that have explicit HTML elements (like .h1 through .h6). The reason I've used "title" for those is that I don't want to be constrained by the name of the class, to get confused about where I can use them in my app.
+
+For the .button and .td example, I *have* used HTML elements, as a table cell isn't really transferrable (so it'll always apply to a `<td>`), and even if an `<a>` is the element that gets the .button{} class, I'll still want it to look and feel like a button.
 
 ### Use A Single File for Your CSS
 
