@@ -2,7 +2,7 @@
 
 **This is *very* much still in development. Consider this alpha at best.**
 
-Classy CSS is a CSS styleguide and design principle.
+Classy CSS is a CSS styleguide and design principle. It's best described as a common-sense specification.
 
 It leverages the best enhancements of CSS preprocessors like Sass / LESS, the best architectural principles of OOCSS and SMACSS, and can drop in to any existing CSS framework you're currently using. It's efficient and elegant — for writing, reading, rendering, and refactoring.
 
