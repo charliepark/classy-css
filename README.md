@@ -1,5 +1,7 @@
 # Classy CSS
 
+**This is *very* much still in development. Consider this alpha at best.**
+
 Classy CSS is a CSS styleguide and design principle.
 
 It leverages the best enhancements of CSS preprocessors like Sass / LESS, the best architectural principles of OOCSS and SMACSS, and can drop in to any existing CSS framework you're currently using. It's efficient and elegant — for writing, reading, rendering, and refactoring.
@@ -57,7 +59,7 @@ Every styled item has one (and only one) class at runtime. More on dynamically-a
 
 ### No Naked HTML Elements in Your CSS
 
-Before we had CSS preprocessors, it made sense to worry a lot about the structure of your site and to reflect that structure in your CSS file. So you'd have declarations like `div#main_nav li a{}`. You then had to decide where that went. (Does it go in a section for links? For "things in lists"? For "navigation stuff"?) With Classy, you would give each of those links a class: `.link-main-nav` (or similar). You'd put it in the appropriate place in the CSS file (alphabetically), and you'd be done.
+Before we had CSS preprocessors, it made sense to worry a lot about the structure of your site and to reflect that structure in your CSS file. So you'd have declarations like `div#main_nav li a{}`. You then had to decide where that went in your CSS files. (Does it go in a section for links? For "things in lists"? For "navigation stuff"?) With Classy, you would give each of those links a class: `.link-main-nav` (or similar). You'd put it in the appropriate place in the CSS file (alphabetically), and you'd be done.
 
 It's tempting to write a universal layout template for your `<h3>`s, or for `<p>`s, or whatever. A base class that everything else can build off of. Before CSS preprocessors like SASS, that wasn't a bad idea. But Classy shifts all of that trickle-down design (the *cascade*!) to the initial file. Again, if the element deserves to have a style, it deserves to have a class.
 
@@ -65,41 +67,7 @@ Apart from a CSS reset (we like Eric Meyer's reset, but any reset will do). Apar
 
 You ask: "But what about `p`aragraph tags? And `strong`s? And `em`s?" Okay. A caveat: There will be some atomic elements that you *will* include without classes. But that's why it's important to build your reset/base so that it conforms to the look and feel of the rest of the site. But if it's not an element that your CMS is going to dynamically generate, give the item a class and style it accordingly.
 
-### No IDs
-
-There's no good reason to declare anything in CSS with an ID. If you're trying to scope declarations via a containing div, you should create a new class and extend the existing class.
-
-### Limit Nesting As Much As Possible
-
-Because we didn't have preprocessors, it used to be standard to have code like the following:
-
-    h4 {
-      color: #333;
-    }
-    
-    div.popup {
-      background: #555;
-    }
-    
-    div.popup h4{
-      color: #fff;
-    }
-
-We want to get rid of that `div.popup h4` declaration.
-
-Classy CSS would rework that code to something like this:
-
-    .popup{
-      background: #555;
-    }
-    
-    .title-medium {
-      color: #333;
-    }
-        
-    .title-medium-in-popup {
-      color: #fff;
-    }
+If you find that you absolutely *must* use non-classed elements, scoped inside parent elements, as long as the parent element has a class, it'll still work. So: `.byline a` would be okay, but it would be better to have a class: `.link-byline`.
 
 Your classes should stand on their own.
 
@@ -112,6 +80,15 @@ Ideally, though, you'd set your app to spit out a more specific class:
 
     .td-amount { color: black; }
     .td-amount-overspent { color: red; }
+
+Similarly, you might find that you have content that flows into different containers, which should be styled differently depending on where it gets displayed. If your site uses this kind of content, y
+
+
+### No IDs
+
+There's no good reason to declare anything in CSS with an ID. If you're trying to scope declarations via a containing div, you should create a new class and extend the existing class.
+
+### Limit Nesting As Much As Possible ###
 
 
 ### Give Your CSS Classes Descriptive Names
