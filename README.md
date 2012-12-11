@@ -34,6 +34,12 @@ I'm Charlie Park. I've been writing CSS for about 12 years now. I've tried just 
 
 The principles that Classy CSS emphasizes are extracted out of my own building of sites, and out of frustration that the existing tools haven't met my needs.
 
+### What influenced you in making Classy CSS? ###
+
+Primarily, my years writing CSS and not finding any of the methodologies to be sifficient. There are a few articles, conference talks, and blog posts that I've read over the years that have impacted it. The most recent ones are the easiest to find, so here are two:
+
+* [OOCSS + Sass = The best way to CSS](http://ianstormtaylor.com/oocss-plus-sass-is-the-best-way-to-css/) (Ian Storm Taylor)
+* [GitHub's CSS Performance](https://speakerdeck.com/jonrohan/githubs-css-performance) (Jon Rohan)
 
 
 ***
