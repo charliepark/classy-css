@@ -49,7 +49,7 @@ Primarily, my years writing CSS and not finding any of the methodologies to be s
 
 The main thing you'll see when you write Classy CSS is --- surprise --- there are lots of classes. A good shorthand: "Everything that deserves styling deserves a class. Nothing deserves more than one class."
 
-### Lots of Classes
+### 1. Lots of Classes
 
 The first thing you'll notice is that everything is a class. Hence the name.
 
@@ -185,3 +185,15 @@ Then, in the actual HTML of the page to be rendered, we'd simply have:
 
 
 Do we end up with more classes? Yes. Is that a problem? No.
+
+
+### JS ###
+
+Some notes to flesh out:
+
+* All JS keys off of HTML5 data attriibutes, not classes. (Example: `<input class='input-zip' data-save-on="blur" data-placeholder-text="ZIP Code" value="90210" />`)
+* If you *must* use classes, JS classes use the `js-` prefix on the class.
+
+
+
+
