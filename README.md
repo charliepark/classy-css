@@ -132,39 +132,43 @@ Similar to David Allen's approach to organizing paper-based files, Classy CSS us
 
 Preprocessors like Less and SASS have opened up a whole world of possibility. Classy tries to make the most of that, especially with the `extend` command that SASS makes available.
 
+In OOCSS, you'd have multiple classes that would apply to an object: `<button class='large primary rounded'>`. With a preprocessor, you can still have those classes, but you'd be able to combine them. So, in Classy CSS, you'd have code like this:
 
-
-
-
-    .table-cell{
-      font-size: 13px;
-      padding: 4px 10px;
-      position: relative;
-      text-align: right;
+    .button{}
+    
+    .button-hero{
+      @extend .button-large;
+      @extend .button-primary;
+      @extend .button-rounded;
     }
     
-    .table-header-text{
-      @extend .table-cell;
-      font-family: "gill sans mt", "gill sans", "Trebuchet MS", verdana;
-      line-height: 14px;
-      min-width: 80px;
-      padding-bottom: 2px;
-      text-transform: uppercase;
-      vertical-align: bottom;
+    .button-large{
+      @extend .button;
+      font-size: 2em;
+      padding: 20px;
     }
     
-    .td{
-      @extend .table-cell;
-      line-height: 20px;
+    .button-primary{
+      @extend .button;
+      color: #fff;
+      background: #678;
     }
     
-    .td-amount{
-      @extend .td;
-      @extend .muted;  
-      text-align: right;
+    .button-rounded{
+      @extend .button;
+      border-radius: 10px;
     }
     
-    .td-amount-carried-in{
-      @extend .td-amount;
+    .button-secondary{
+      @extend .button;
+      color: #444;
+      background: #ccc;
+    }
+    
+    .button-sidekick{
+      @extend .button-large;
+      @extend .button-rounded;
+      @extend .button-secondary;
     }
 
+Do we end up with more classes? Yes. Is that a problem? No.
