@@ -30,8 +30,6 @@ It's probably clarifying to talk about what it isn't.
 
 If you already have a CSS flow that you like, there's a good chance that Classy won't work for you. But if you're like me — you've tried a lot of approaches, and none have worked yet — this could be a great fit.
 
-Let's make CSS fun again.
-
 ### So who are you, to be writing this? ###
 
 I'm Charlie Park. I've been writing CSS for about 12 years now. I've tried just about every approach out there, and have been refining my approach with every project.
