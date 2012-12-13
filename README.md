@@ -54,17 +54,19 @@ Primarily, my years writing CSS and not finding any of the methodologies to be s
 ### In a nutshell: ###
 
 1. Only use classes. DOM elements get a single class.
-2. Don't use "naked" DOM elements (like `<h4>Article Title</h4>`), unless the DOM element appears more than, say, 10 times (say, `<p>` tags inside a blog post). In general, if something warrants style, it warrants its own class.
-3. Use the @extend functionality of Sass to keep code clean.
-4. Organize all CSS in a single file, with all classes alphabetized.
-5. Name classes by rough application, context, and function. So:
+2. Use the @extend functionality of Sass to keep code clean.
+3. Organize all CSS in three files. Similar to SMACSS:
+  * Classes (think: "classes"; where almost all of your details will be)
+  * Layout (think: "ids"; used to set up a few one-time-per-page components, like headers and footers, and main content areas)
+  * Selectors (think: "selectors"; used for your reset and to set up defaults)
+4. Name classes by rough application, context, and function. So:
   * %button-default{…}
   * .button-cancel{(extend button-default)…}
   * .button-submit{(extend button-default)…}
   * %title-default{…}
   * .title-of-page{(extend title-default)…}
   * .title-of-section{(extend title-default)…}
-6. DOM elements that are affected by JS can also have a .js-... class, but if possible, use data-attributes instead of classes.
+5. DOM elements that are affected by JS can also have a .js-... class, but if possible, use data-attributes instead of classes.
 
 
 
