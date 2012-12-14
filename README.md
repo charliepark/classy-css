@@ -56,7 +56,7 @@ Primarily, my years writing CSS and not finding any of the methodologies to be s
 3. Organize all CSS in three files. Similar to SMACSS:
   * Classes (think: "classes"; where almost all of your details will be)
   * Layout (think: "ids"; used to set up a few one-time-per-page components, like headers and footers, and main content areas; you won't touch this much)
-  * Selectors (think: "selectors"; used for your reset and to set up defaults; after you set this up at the beginning, you'll barely touch it, ever)
+  * Base (think: "elements"; used for your reset and to set up defaults; after you set this up at the beginning, you'll barely touch it, ever)
 4. Name classes by rough application, context, and function. So:
   * %button-default{…}
   * .button-cancel{(extend button-default)…}
