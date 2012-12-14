@@ -136,10 +136,6 @@ You'll notice that for the links and the titles, I've avoided using elements tha
 
 For the .button and .td example, I *have* used HTML elements, as a table cell isn't really transferrable (so it'll always apply to a `<td>`), and even if an `<a>` is the element that gets the .button{} class, I'll still want it to look and feel like a button.
 
-### Use A Single File for Your CSS
-
-In *Getting Things Done*, David Allen recommends having a single filing structure, based alphabetically. He's worked with hundreds of thousands of clients, and sold millions of books. He probably has good things to say about filing structures.
-
 ### Alphabetize the Classes in Your CSS File
 
 Similar to David Allen's approach to organizing paper-based files, Classy CSS uses a single CSS file, with all classes listed alphabetically. Because you're naming them descriptively, they should fall into a natural order. For example:
@@ -153,6 +149,21 @@ Similar to David Allen's approach to organizing paper-based files, Classy CSS us
     .title-of-page {}
     .title-of-popup-box{}
     .title-of-section {}
+
+
+### No More Than Two Levels Deep ###
+
+Because you have so many classes, and because you *only* have classes for defining style, you don't need to have complicated selector strings in your CSS. If you have a specific use-case where a certain style should be renedered differently in a different context (and you aren't able to change the elemnt's class), you shouldn't need more than two levels of classes *at most*.
+
+An example: In PearBudget, we have table cells that show the amount of money remaining in a category. Think of it like a bank balance. So one category might be at $31.42, another might be at -$49.03. I want the negative values to be red.
+
+I have three options:
+
+1. I can have a JavaScript function run at loadtime, find the negative amounts, and assign a dynamic class (or style) to those specific cells.
+2. I can evaluate the value of the cell when I'm dynamically building the page, and I can give the cell a specific class that recognizes the negative value (and that class would have a `color: red;`).
+3. I can assign a class to a parent element (like `<tr class='overspent'>`), and then have, in the CSS, a selector of `.overspent .td-amount`.
+
+I'm still working through the pros and cons of these approaches. Will update when I have something more substantial.
 
 
 
@@ -220,13 +231,11 @@ Common critiques against having lots of classes (flesh out):
 
 There are, of course, downsides to this approach. Let's look at them.
 
-### Babysitting elements ###
+...
 
 
 
 
-
-## JS ##
 
 Some notes to flesh out:
 
