@@ -42,6 +42,7 @@ Primarily, my years writing CSS and not finding any of the methodologies to be s
 
 * [OOCSS + Sass = The best way to CSS](http://ianstormtaylor.com/oocss-plus-sass-is-the-best-way-to-css/) (Ian Storm Taylor)
 * [GitHub's CSS Performance](https://speakerdeck.com/jonrohan/githubs-css-performance) (Jon Rohan)
+* [A Harder-Working Class](http://24ways.org/2012/a-harder-working-class/) (Nathan Ford)
 
 
 ***
