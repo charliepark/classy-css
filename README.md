@@ -113,7 +113,7 @@ There's no good reason to declare anything in CSS with an ID. If you're trying t
 
 ### Give Your CSS Classes Descriptive Names
 
-Instead of trying to decipher cryptic names when you're reading your code in a year or two, it's better to give your CSS classes descriptive names. So instead of `.postDate`, call it `.post-metadata-`
+Instead of trying to decipher cryptic names when you're reading your code in a year or two, it's better to give your CSS classes descriptive names. So instead of `.postDate`, call it `.post-metadata-date` or something similar. One of the benefits of long, descriptive names is that it makes it trivial to do a find-all to see where your code needs to be updated / tweaked / adjusted. (See Pamela Fox's post, [A Tale of Two Bootstraps: Lessons Learned in Maintainable CSS](http://blog.pamelafox.org/2012/12/a-tale-of-two-bootstraps-lessons.html), for something related.)
 
 ### How to Name Your Clases ###
 
