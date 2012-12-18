@@ -108,9 +108,6 @@ Similarly, you might find that you have content that flows into different contai
 
 There's no good reason to declare anything in CSS with an ID. If you're trying to scope declarations via a containing div, you should create a new class and extend the existing class.
 
-### Limit Nesting As Much As Possible ###
-
-
 ### Give Your CSS Classes Descriptive Names
 
 Instead of trying to decipher cryptic names when you're reading your code in a year or two, it's better to give your CSS classes descriptive names. So instead of `.postDate`, call it `.post-metadata-date` or something similar. One of the benefits of long, descriptive names is that it makes it trivial to do a find-all to see where your code needs to be updated / tweaked / adjusted. (See Pamela Fox's post, [A Tale of Two Bootstraps: Lessons Learned in Maintainable CSS](http://blog.pamelafox.org/2012/12/a-tale-of-two-bootstraps-lessons.html), for something related.)
@@ -161,10 +158,12 @@ An example: In PearBudget, we have table cells that show the amount of money rem
 I have three options:
 
 1. I can have a JavaScript function run at loadtime, find the negative amounts, and assign a dynamic class (or style) to those specific cells.
-2. I can evaluate the value of the cell when I'm dynamically building the page, and I can give the cell a specific class that recognizes the negative value (and that class would have a `color: red;`).
+2. I can evaluate the value of the cell when I'm dynamically building the page, and I can give the cell a specific class that recognizes the negative value (and that class would have a `color: red;`). While this could be a separate class added to the cell (so the HTML would look like `<td class='td-amount overspent'>`), a classier version would be to assign a single class: `td-amount-overspent`. That class (or chained set of classed) would then have the `color: red` in the CSS file.
 3. I can assign a class to a parent element (like `<tr class='overspent'>`), and then have, in the CSS, a selector of `.overspent .td-amount`.
 
-I'm still working through the pros and cons of these approaches. Will update when I have something more substantial.
+The specific use-case will determine which of these directions is best.
+
+I'm still working through the pros and cons of these approaches. Will update when I have something more substantial. At the moment, I'm leaning towards using option 3, to have a class applied to the parent row, and to then have CSS that overrides the default style.
 
 
 
