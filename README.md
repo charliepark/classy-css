@@ -2,11 +2,17 @@
 
 **This is *very* much still in development. Consider this alpha at best.**
 
-Classy CSS is a CSS styleguide and design principle. It's best described as a common-sense specification for CSS.
+A good approach to CSS will be **efficient and elegant** &mdash; for **writing**, for **reading**, for **rendering**, and for **refactoring**.
 
-It was inspired by a few other approaches to CSS. It leverages the best enhancements of CSS preprocessors like Sass / LESS, the best architectural principles of OOCSS and SMACSS, and can drop in to any existing CSS framework you're currently using. It's efficient and elegant — for writing, reading, rendering, and refactoring.
+It should **leverage the best practices in the development community**, including **the good parts of OOCSS and SMACSS**, and **the power of preprocessors like LESS and Sass**.
 
-If you want to jump in, check out [How to write Classy CSS](#how).
+It should be **easily learnable and teachable**, and should be **easily applied** to any existing CSS file, so a web app could be converted over with little hassle.
+
+**Classy CSS is all of these things.**
+
+Classy CSS is a CSS styleguide and design principle for web applications. It's a common-sense specification for CSS.
+
+We'll cover some more about Classy CSS, but If you want to jump in and learn the details, check out [How to write Classy CSS](#how).
 
 ### So, the benefits?
 
