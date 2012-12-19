@@ -31,7 +31,7 @@ It gives you the following benefits:
 It's probably clarifying to talk about what it isn't.
 
 * It is **not** a framework, like Bootstrap, or Foundation, or Blueprint, or similar. It doesn't come with any pre-existing classes or modules.
-* It is **not** an architecture, like SMACSS, or like OOCSS, though it's similar. You can use it alongside either one of those if you like them, though it contradicts some of the principles in both.
+* It is **not** an architecture, like SMACSS, or like OOCSS, or like BEM, though it's similar. You can use it alongside either one of those if you like them, though it contradicts some of the principles in both.
 * It is **not** a preprocessor, like Sass or LESS. Classy CSS leans very heavily on preprocessors, but isn't one itself. We use Sass, and have written all documentation assuming you're using Sass.
 
 If you already have a CSS flow that you like, there's a good chance that Classy won't work for you. But if you're like me — you've tried a lot of approaches, and none have worked yet — this could be a great fit.
@@ -49,7 +49,8 @@ Primarily, my years writing CSS and not finding any of the methodologies to be s
 * [OOCSS + Sass = The best way to CSS](http://ianstormtaylor.com/oocss-plus-sass-is-the-best-way-to-css/) (Ian Storm Taylor)
 * [GitHub's CSS Performance](https://speakerdeck.com/jonrohan/githubs-css-performance) (Jon Rohan)
 * [A Harder-Working Class](http://24ways.org/2012/a-harder-working-class/) (Nathan Ford)
-
+* [BEM: The Block, Element, Modifier Approach To Decoupling HTML And CSS](http://www.vanseodesign.com/css/block-element-modifier/) (Steven Bradley)
+* [About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/) (Nicolas Gallagher)
 
 ***
 
@@ -83,6 +84,10 @@ The main thing you'll see when you write Classy CSS is — surprise — there ar
 The first thing you'll notice is that everything is a class. Hence the name.
 
 Every styled item has one (and only one) class at runtime. More on dynamically-added classes in a bit.
+
+You might object: "Isn't adding lots of classes bad? Isn't that 'classitis'?" Adding lots of classes isn't bad. As Steven Bradley notes, "At first glance it seems like adding classes to html increases coupling due to the added markup, but the opposite is actually true. Coupling is increased the more dependent we are on a specific html structure. Jonathan Snook referred to this as the *depth of applicability*. The greater this depth, the greater our html and css are coupled.
+
+Unfortunately our best practices the last few years have been increasing coupling even as we thought we were decreasing it."
 
 ### 2. No Naked HTML Elements in Your CSS
 
