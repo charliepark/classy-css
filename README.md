@@ -2,15 +2,15 @@
 
 **This is *very* much still in development. Consider this alpha at best.**
 
-A good approach to CSS will be **efficient and elegant** &mdash; for **writing**, for **reading**, for **rendering**, and for **refactoring**.
+## A good approach to CSS will be **efficient and elegant** &mdash; for **writing**, for **reading**, for **rendering**, and for **refactoring**.
 
-It should **leverage the best practices in the development community**, including **the good parts of OOCSS and SMACSS**, and **the power of preprocessors like LESS and Sass**.
+## It should **leverage the best practices in the development community**, including **the good parts of OOCSS and SMACSS**, and **the power of preprocessors like LESS and Sass**.
 
-It should be **easily learnable and teachable**, and should be **easily applied** to any existing CSS file, so a web app could be converted over with little hassle.
+## It should be **easily learnable and teachable**, and should be **easily applied** to any existing CSS file, so a web app could be converted over with little hassle.
 
-**Classy CSS is all of these things.**
+## Classy CSS is all of these things.
 
-Classy CSS is a CSS styleguide and design principle for web applications. It's a common-sense specification for CSS.
+### Classy CSS is a CSS styleguide and design principle for web applications. It's a common-sense specification for CSS.
 
 We'll cover some more about Classy CSS, but If you want to jump in and learn the details, check out [How to write Classy CSS](#how).
 
