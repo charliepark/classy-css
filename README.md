@@ -21,20 +21,20 @@ It gives you the following benefits:
 * Writing code is faster, with less cognitive overhead. You don't waste time worrying about selector specificity or the DOM. You know *exactly* where that CSS declaration should go.
 * Editing code is easier, as you know exactly where to find any component. You don't have to search through multiple files, or run Cmd+f's within a large CSS file. Everything is where it should be.
 * Page rendering time is faster. Classy CSS uses Steve Souders-style best practices to give you the most efficient loadtimes on your pages.
-* Easier file management. You don't have to wrangle lots of files together at runtime, or think about whether something fits into a certain compartmentalizing file, or adjust which file your CSS should go in if you realize a CSS declartaion should be more global (or more specific). There's only one CSS file.
+* Easier file management. You don't have to wrangle lots of files together at runtime, or think about whether something fits into a certain compartmentalizing file, or adjust which file your CSS should go in if you realize a CSS declartaion should be more global (or more specific). There's only one main CSS file that you work in (and only two supporting files).
 * Code cleanup is easier. You can prune out-of-date code without worrying that you're missing some obscurely nested "aside.popup h3.subarticle.subtitle" somewhere on the site.
-* Writing CSS for large sites uses the same methodology as writing CSS for small sites. There are more moving parts, of course, but they're pretty straightforward parts.
+* Writing CSS for large sites uses the same methodology as writing CSS for small sites. The learning curve is gentle, and plateaus quickly.
 * Creating a styleguide for your site is totally painless.
 
 ### Hmm. Isn't it like _______________
 
-It's probably clarifying to talk about what it isn't.
+It's probably clarifying to talk about what Classy CSS isn't.
 
 * It is **not** a framework, like Bootstrap, or Foundation, or Blueprint, or similar. It doesn't come with any pre-existing classes or modules.
-* It is **not** an architecture, like SMACSS, or like OOCSS, or like BEM, though it's similar. You can use it alongside either one of those if you like them, though it contradicts some of the principles in both.
-* It is **not** a preprocessor, like Sass or LESS. Classy CSS leans very heavily on preprocessors, but isn't one itself. We use Sass, and have written all documentation assuming you're using Sass.
+* It is **not** an architecture, like SMACSS, or like OOCSS, or like BEM, though it's similar. You can use it alongside any of those if you like them, though it contradicts some of their principles. If you don't use them, you can get the majority of their benefits by simply using Classy CSS and being done with it.
+* It is **not** a preprocessor, like Sass or LESS. Classy CSS leans very heavily on preprocessors, but isn't one itself. We use Sass, and have written all documentation assuming you're using it, too. It should be easily portable to LESS.
 
-If you already have a CSS flow that you like, there's a good chance that Classy won't work for you. But if you're like me — you've tried a lot of approaches, and none have worked yet — this could be a great fit.
+If you already have a CSS flow that you like, there's a good chance that Classy won't work for you. But if you're like a lot of front-end developers — you've tried a lot of approaches, and none have worked yet — this could be a great fit for you.
 
 ### So who are you, to be writing this? ###
 
@@ -47,6 +47,7 @@ The principles that Classy CSS emphasizes are extracted out of my own building o
 Primarily, my years writing CSS and not finding any of the methodologies to be sifficient. There are a few articles, conference talks, and blog posts that I've read over the years that have impacted it. The most recent ones are the easiest to find, so here are two:
 
 * [OOCSS + Sass = The best way to CSS](http://ianstormtaylor.com/oocss-plus-sass-is-the-best-way-to-css/) (Ian Storm Taylor)
+* [Your CSS Is A Mess](https://speakerdeck.com/snookca/your) (Jonathan Snook)
 * [GitHub's CSS Performance](https://speakerdeck.com/jonrohan/githubs-css-performance) (Jon Rohan)
 * [A Harder-Working Class](http://24ways.org/2012/a-harder-working-class/) (Nathan Ford)
 * [BEM: The Block, Element, Modifier Approach To Decoupling HTML And CSS](http://www.vanseodesign.com/css/block-element-modifier/) (Steven Bradley)
