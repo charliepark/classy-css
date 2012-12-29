@@ -93,9 +93,9 @@ If you've ever hesitated to change the class of an HTML element, or hesitated to
 
 ### 2. No Naked HTML Elements in Your CSS
 
-Before we had CSS preprocessors, it made sense to worry a lot about the structure of your site and to reflect that structure in your CSS file. So you'd have declarations like `div#main_nav li a{}`. You then had to decide where that went in your CSS files. (Does it go in a section for links? For "things in lists"? For "navigation stuff"?) With Classy, you would give each of those links a class: `.link-main-nav` (or similar). You'd put it in the appropriate place in the CSS file (alphabetically), and you'd be done.
+Before we had CSS preprocessors, it made sense to worry a lot about the structure of your site and to reflect that structure in your CSS file. So you'd have declarations like `div#main_nav li a{}`. You then had to decide where that went in your CSS files. (Does it go in a section for links? For "things in lists"? For "navigation stuff"?) With Classy, you would give each of those links a class: `.link-nav-main` (or similar). You'd put it in the appropriate place in the CSS file (alphabetically), and you'd be done.
 
-It's tempting to write a universal layout template for your `<h3>`s, or for `<p>`s, or whatever. A base class that everything else can build off of. Before CSS preprocessors like SASS, that wasn't a bad idea. But Classy shifts all of that trickle-down design (the *cascade*!) to the initial file. Again, if the element deserves to have a style, it deserves to have a class.
+It's tempting to write a universal layout template for your `<h3>`s, or for `<p>`s, or whatever. A base class that everything else can build off of. Before CSS preprocessors like SASS, that wasn't a bad idea. And with blogs and other simple layouts, that might be appropriate. But for rich web apps with lots of different types of `<h3>`s, and lots of `<p>`s, having raw HTML elements named in your CSS can be dangerous. 
 
 Apart from a CSS reset (we like Eric Meyer's reset, but any reset will do). Apart from that, don't traffick in naked elements.
 
@@ -115,11 +115,11 @@ Ideally, though, you'd set your app to spit out a more specific class:
     .td-amount { color: black; }
     .td-amount-overspent { color: red; }
 
-Similarly, you might find that you have content that flows into different containers, which should be styled differently depending on where it gets displayed. If your site uses this kind of content, y
+Similarly, you might find that you have content that flows into different containers, which should be styled differently depending on where it gets displayed. If your site uses this kind of content, you should have enough control over the content generated that you can assign specfific classes. Decoupling your CSS is good.
 
 ### No IDs
 
-There's no good reason to declare anything in CSS with an ID. If you're trying to scope declarations via a containing div, you should create a new class and extend the existing class.
+Apart from a handul of layout CSS — which should go in your "layout.css" file — you shouldn't have any IDs in your CSS. Even these should be fairly minimal. Maybe a `nav#main-nav` or something.
 
 ### Give Your CSS Classes Descriptive Names
 
