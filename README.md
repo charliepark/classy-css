@@ -1,5 +1,7 @@
 # Classy CSS
 
+Good code is classy.
+
 **This is *very* much still in development. Consider this alpha at best.**
 
 ## A good approach to CSS will be **efficient and elegant** &mdash; for **writing**, for **reading**, for **rendering**, and for **refactoring**.
@@ -44,7 +46,7 @@ The principles that Classy CSS emphasizes are extracted out of my own building o
 
 ### What influenced you in making Classy CSS? ###
 
-Primarily, my years writing CSS and not finding any of the methodologies to be sifficient. There are a few articles, conference talks, and blog posts that I've read over the years that have impacted it. The most recent ones are the easiest to find, so here are two:
+Primarily, my years writing CSS and not finding any of the methodologies to be sifficient. There are a few articles, conference talks, and blog posts that I've read over the years that have impacted it. The most recent ones are the easiest to find, so here are a few. You don't need to read these, but you'll probably like them.
 
 * [OOCSS + Sass = The best way to CSS](http://ianstormtaylor.com/oocss-plus-sass-is-the-best-way-to-css/) (Ian Storm Taylor)
 * [Your CSS Is A Mess](https://speakerdeck.com/snookca/your) (Jonathan Snook)
@@ -60,8 +62,8 @@ Primarily, my years writing CSS and not finding any of the methodologies to be s
 
 ### In a nutshell: ###
 
-1. Only use classes. DOM elements get a single class.
-2. Use the @extend functionality of Sass to keep code clean.
+1. Only use classes. All HTML elements in your DOM get a single class.
+2. Use the @extend functionality of Sass to keep your CSS code clean.
 3. Organize all CSS in three files. Similar to SMACSS:
   * Classes (think: "classes"; where almost all of your details will be)
   * Layout (think: "ids"; used to set up a few one-time-per-page components, like headers and footers, and main content areas; you won't touch this much)
@@ -73,10 +75,7 @@ Primarily, my years writing CSS and not finding any of the methodologies to be s
   * %title-default{…}
   * .title-of-page{(extend title-default)…}
   * .title-of-section{(extend title-default)…}
-5. DOM elements that are affected by JS can also have a .js-... class, but if possible, use data-attributes instead of classes.
-
-
-
+5. DOM elements that are affected by JS can also have a .js-... class, but if possible, use data-attributes instead of classes. More on this soon.
 
 The main thing you'll see when you write Classy CSS is — surprise — there are lots of classes. A good shorthand: "Everything that deserves styling deserves a class. Nothing deserves more than one class."
 
@@ -86,9 +85,11 @@ The first thing you'll notice is that everything is a class. Hence the name.
 
 Every styled item has one (and only one) class at runtime. More on dynamically-added classes in a bit.
 
-You might object: "Isn't adding lots of classes bad? Isn't that 'classitis'?" Adding lots of classes isn't bad. As Steven Bradley notes, "At first glance it seems like adding classes to html increases coupling due to the added markup, but the opposite is actually true. Coupling is increased the more dependent we are on a specific html structure. Jonathan Snook referred to this as the *depth of applicability*. The greater this depth, the greater our html and css are coupled.
+You might object: "Isn't adding lots of classes bad? Isn't that 'classitis'?"
 
-Unfortunately our best practices the last few years have been increasing coupling even as we thought we were decreasing it."
+Adding lots of classes isn't bad. As Steven Bradley notes, "At first glance it seems like adding classes to html increases coupling due to the added markup, but the opposite is actually true. Coupling is increased the more dependent we are on a specific html structure. Jonathan Snook referred to this as the *depth of applicability*. The greater this depth, the greater our html and css are coupled. … Unfortunately our best practices the last few years have been increasing coupling even as we thought we were decreasing it."
+
+If you've ever hesitated to change the class of an HTML element, or hesitated to change the CSS that styled that class, because you were afraid of where else in your code you used the same class, you know the dangers of tight coupling.
 
 ### 2. No Naked HTML Elements in Your CSS
 
