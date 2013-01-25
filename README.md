@@ -55,7 +55,7 @@ Primarily, my years writing CSS and not finding any of the methodologies to be s
 * [BEM: The Block, Element, Modifier Approach To Decoupling HTML And CSS](http://www.vanseodesign.com/css/block-element-modifier/) (Steven Bradley)
 * [About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/) (Nicolas Gallagher)
 * [CSS Architecture](http://philipwalton.com/articles/css-architecture/) (Philip Walton)
-
+* [The Future of OOCSS: A Proposal](http://philipwalton.com/articles/the-future-of-oocss-a-proposal/) (Phillip Walton)
 ***
 
 <a name="how"></a>
