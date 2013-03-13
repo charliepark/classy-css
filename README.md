@@ -245,8 +245,11 @@ Common critiques against having lots of classes (flesh out):
 
 There are, of course, downsides to this approach. Let's look at them.
 
-...
+(TODO: come up with some downsides.)
 
+I'm not totally happy with certain "state" conditions, when I'm limited from using multiple classes in an element. For example, if I know that a class that affects the entire row of a table is going to be applied, and I want the cells within that row to be affected in some way (say, color), the mental gymnastics are a little tricky at the moment. I'm not saying they aren't worth it. I'm not saying they are. I think we'll need to consider the flexibility we need, so that a second class applied to an object doesn't create a cascade of new sub-classes required on the elements contained within that element. Perhaps the best way to think of Classy is as "OOCSS principles, in a SMACSS architecture, with some BEM conventions thrown in for clarity."
+
+If you're developing a content-based site, like a magazine, or a blog, or something else where you have long strings of, say, `<p>` elements, you aren't going to want to give a class to each one. You'd want to set those up in the "Base" section of the file.
 
 
 
