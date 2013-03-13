@@ -46,7 +46,7 @@ The principles that Classy CSS emphasizes are extracted out of my own building o
 
 ### What influenced you in making Classy CSS? ###
 
-Primarily, my years writing CSS and not finding any of the methodologies to be sifficient. There are a few articles, conference talks, and blog posts that I've read over the years that have impacted it. The most recent ones are the easiest to find, so here are a few. You don't need to read these, but you'll probably like them.
+Primarily, my years writing CSS and not finding any of the methodologies to be sufficient. There are a few articles, conference talks, and blog posts that I've read over the years that have impacted it. The most recent ones are the easiest to find, so here are a few. You don't need to read these, but you'll probably like them.
 
 * [OOCSS + Sass = The best way to CSS](http://ianstormtaylor.com/oocss-plus-sass-is-the-best-way-to-css/) (Ian Storm Taylor)
 * [Your CSS Is A Mess](https://speakerdeck.com/snookca/your) (Jonathan Snook)
