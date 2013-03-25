@@ -56,6 +56,12 @@ Primarily, my years writing CSS and not finding any of the methodologies to be s
 * [About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/) (Nicolas Gallagher)
 * [CSS Architecture](http://philipwalton.com/articles/css-architecture/) (Philip Walton)
 * [The Future of OOCSS: A Proposal](http://philipwalton.com/articles/the-future-of-oocss-a-proposal/) (Phillip Walton)
+
+But wait! surprise twist! Two posts from Phillip Walton that argue against some of the stuff that Classy CSS does! Worth reading!
+
+* [Defending Presentational Class Names](http://tympanus.net/codrops/2013/01/22/defending-presentational-class-names/) (Phillip Walton)
+* [CSS: Everything is global and how to deal with it](http://www.adobe.com/devnet/html5/articles/css-everything-is-global-and-how-to-deal-with-it.html) (Phillip Walton)
+
 ***
 
 <a name="how"></a>
