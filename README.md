@@ -62,6 +62,20 @@ But wait! surprise twist! Two posts from Phillip Walton that argue against some 
 * [Defending Presentational Class Names](http://tympanus.net/codrops/2013/01/22/defending-presentational-class-names/) (Phillip Walton)
 * [CSS: Everything is global and how to deal with it](http://www.adobe.com/devnet/html5/articles/css-everything-is-global-and-how-to-deal-with-it.html) (Phillip Walton)
 
+
+### A few TODOs
+
+* revise notes about "only one class" … not on that team anymore. Balance.
+* write about idea of "items" versus "collections"
+  * item: a one-off object, like a specific link, or cell, given a class:
+    * the class is assigned on the lowest-level element
+    * `.td-highlighted{}`
+    * `.popup-account{}`
+  * collection: a number of objects together, which should all have similar properties
+    * the class is assigned on the parent element
+    * `.nav-links a{}`
+
+
 ***
 
 <a name="how"></a>
